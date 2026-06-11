@@ -484,7 +484,7 @@ The dashboard has **5 report pages**, each targeting a different business audien
 > - Profit margin at 10.78% with a 54.82% late delivery rate indicates that logistics inefficiency is actively eroding profitability
 > - Monthly profit peaks in January and August–September provide clear windows for promotional planning and inventory buildup
 
-![Business Performance Overview] <img width="1371" height="778" alt="Screenshot 2026-06-11 162353" src="https://github.com/user-attachments/assets/1341f648-d239-42d6-afe3-09192d1651a7" />
+[Business Performance Overview] <img width="1371" height="778" alt="Screenshot 2026-06-11 162353" src="https://github.com/user-attachments/assets/1341f648-d239-42d6-afe3-09192d1651a7" />
 
 
 ---
@@ -508,7 +508,8 @@ The dashboard has **5 report pages**, each targeting a different business audien
 > - Debit is the dominant payment method (38.54%) — ensuring seamless debit/card checkout experience is critical to reducing cart abandonment
 > - A single customer ("Mary") generating $13.0M signals heavy revenue concentration risk — diversifying the top customer base should be a strategic priority
 
-![Customer Analytics](06_PowerBI/Customer_Analytics.png)
+[Customer Analytics] <img width="1372" height="780" alt="Screenshot 2026-06-11 162405" src="https://github.com/user-attachments/assets/1f3c841a-1c07-412a-8acc-9dfc3ccb0850" />
+
 
 ---
 
@@ -530,7 +531,8 @@ The dashboard has **5 report pages**, each targeting a different business audien
 > - With only 118 SKUs generating $36.78M, average revenue per SKU is ~$311K — the catalog is lean and high-performing, but over-reliance on a handful of products is a concentration risk
 > - Camping & Hiking ($4.1M) and Cleats ($4.4M) are strong secondary categories — targeted marketing spend in these areas could unlock additional growth
 
-![Product Analytics](06_PowerBI/Product_Analytics.png)
+[Product Analytics] <img width="1371" height="783" alt="Screenshot 2026-06-11 162417" src="https://github.com/user-attachments/assets/6d66e855-1748-48a6-837b-87f567c981a0" />
+
 
 ---
 
@@ -553,7 +555,7 @@ The dashboard has **5 report pages**, each targeting a different business audien
 > - Same Day shipping has only 4.5% late delivery risk — promoting this option where margins allow would directly improve customer satisfaction scores
 > - 4.34% cancellation rate (2.86K orders) represents direct lost revenue that can be partially recovered by improving delivery reliability
 
-![Supply Chain Analytics](06_PowerBI/Logistics_Analytics.png)
+[Supply Chain Analytics] <img width="1357" height="784" alt="Screenshot 2026-06-11 162427" src="https://github.com/user-attachments/assets/a09bab11-1b36-4b16-b274-a6c4397ee2e3" />
 
 ---
 
@@ -575,7 +577,8 @@ The dashboard has **5 report pages**, each targeting a different business audien
 > - Presence across 164 countries with only 23 regions suggests many countries have very low penetration — identifying the top 10–15 underperforming countries with high potential for a focused expansion play
 > - Southeast Asia shows bubble map concentration but lower revenue ranking — a high-volume, low-value market that may need different pricing or product bundling strategies compared to Europe
 
-![Geographic Analysis](06_PowerBI/Geographic_Analytics.png)
+[Geographic Analysis] <img width="1374" height="782" alt="Screenshot 2026-06-11 190158" src="https://github.com/user-attachments/assets/bcca585e-1839-4ddf-a0bc-22e84855143e" />
+
 
 ---
 
