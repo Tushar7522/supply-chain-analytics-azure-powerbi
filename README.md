@@ -484,7 +484,8 @@ The dashboard has **5 report pages**, each targeting a different business audien
 > - Profit margin at 10.78% with a 54.82% late delivery rate indicates that logistics inefficiency is actively eroding profitability
 > - Monthly profit peaks in January and August–September provide clear windows for promotional planning and inventory buildup
 
-![Business Performance Overview](06_PowerBI/Executive_Summary.png)
+![Business Performance Overview] <img width="1371" height="778" alt="Screenshot 2026-06-11 162353" src="https://github.com/user-attachments/assets/1341f648-d239-42d6-afe3-09192d1651a7" />
+
 
 ---
 
