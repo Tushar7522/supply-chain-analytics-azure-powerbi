@@ -477,6 +477,12 @@ The dashboard has **5 report pages**, each targeting a different business audien
 - Orders by Market — LATAM (52K) leads, followed by Europe (50K)
 - Revenue by Market — Europe ($10.9M) leads, LATAM ($10.3M) second
 - Monthly Profit Trend — peaks in Jan ($367K) and Aug–Sep ($360K)
+  
+**💼 Business Impact:**
+> - Revenue peaked in 2015–2016 and has been declining — signals a need for strategic review of pricing, product mix, or market expansion
+> - Europe generates the highest revenue ($10.9M) but LATAM handles the highest order volume (52K) — two different growth levers requiring separate strategies
+> - Profit margin at 10.78% with a 54.82% late delivery rate indicates that logistics inefficiency is actively eroding profitability
+> - Monthly profit peaks in January and August–September provide clear windows for promotional planning and inventory buildup
 
 ![Business Performance Overview](06_PowerBI/Executive_Summary.png)
 
@@ -493,7 +499,13 @@ The dashboard has **5 report pages**, each targeting a different business audien
 - Top Customers by Revenue — Mary leads at $13.0M
 - Payment Method — Debit 38.54% | Transfer 27.49% | Payment 22.94% | Cash 11.02%
 - Customer Geographic Distribution (Bing Map)
-- Customer Count by Segment — Consumer 51.79% (10.7K) | Corporate 30.21% (6.24K) | Home Office 18% (3.72K)
+- Customer Count by Segment — Consumer 51.79% (10.7K) | Corporate 30.21% (6.24K) | Home Office 18% (3.72K) 
+
+ **💼 Business Impact:**
+> - The Consumer segment drives over half of all revenue ($19.1M, 51.91%) — loyalty programs, personalized offers, and retention campaigns here would have the highest ROI
+> - Corporate segment contributes 30.36% revenue with only 30.21% of customers — slightly higher spend per customer, making upselling and account management a worthwhile investment
+> - Debit is the dominant payment method (38.54%) — ensuring seamless debit/card checkout experience is critical to reducing cart abandonment
+> - A single customer ("Mary") generating $13.0M signals heavy revenue concentration risk — diversifying the top customer base should be a strategic priority
 
 ![Customer Analytics](06_PowerBI/Customer_Analytics.png)
 
@@ -511,6 +523,12 @@ The dashboard has **5 report pages**, each targeting a different business audien
 - Top Products by Profit — Field & Stream ($756.2K) | Perfect Fitness ($493.8K)
 - Profit by Department — Fan Shop ($1,834.2K) | Apparel ($881.9K) | Golf ($497.5K)
 
+**💼 Business Impact:**
+> - Field & Stream Sportsman alone generates $6.9M in revenue and $756.2K in profit — inventory stockouts for this single SKU would have an outsized negative impact; safety stock planning is essential
+> - Fan Shop department leads profitability ($1.83M) despite not being the top revenue category — higher margins here suggest pricing power that could be leveraged further
+> - With only 118 SKUs generating $36.78M, average revenue per SKU is ~$311K — the catalog is lean and high-performing, but over-reliance on a handful of products is a concentration risk
+> - Camping & Hiking ($4.1M) and Cleats ($4.4M) are strong secondary categories — targeted marketing spend in these areas could unlock additional growth
+
 ![Product Analytics](06_PowerBI/Product_Analytics.png)
 
 ---
@@ -527,6 +545,13 @@ The dashboard has **5 report pages**, each targeting a different business audien
 - Late Delivery Risk by Shipping Mode — Standard Class 41.45% | Second Class 27.27% | First Class 26.79% | Same Day 4.5%
 - Avg Delivery Time by Mode — Standard 4.00 days | Second Class 3.99 days | First Class 2.00 days | Same Day 0.48 days
 
+**💼 Business Impact:**
+> - A 54.82% late delivery rate means more than half of all customers receive their orders late — this is a critical risk to customer satisfaction, repeat purchase rate, and brand reputation
+> - Shipping variance is worsening year-over-year (0.564 in 2015 → 0.613 in 2018) — the problem is not a one-time issue but a systemic, deteriorating trend that requires root cause analysis
+> - Standard Class shipping carries 41.45% of late delivery risk while averaging 4.00 days — customers using this mode should be proactively communicated to, or given incentives to upgrade
+> - Same Day shipping has only 4.5% late delivery risk — promoting this option where margins allow would directly improve customer satisfaction scores
+> - 4.34% cancellation rate (2.86K orders) represents direct lost revenue that can be partially recovered by improving delivery reliability
+
 ![Supply Chain Analytics](06_PowerBI/Logistics_Analytics.png)
 
 ---
@@ -542,6 +567,12 @@ The dashboard has **5 report pages**, each targeting a different business audien
 - Global Sales Map — bubble map showing concentration in Europe, North America, and Southeast Asia
 - Sales by Region — Western Europe ($5.9M) | Central America ($5.7M) | South America ($3.0M)
 - Toggle: Total Sales ↔ Total Profit views
+
+**💼 Business Impact:**
+> - Western Europe ($5.9M) and Central America ($5.7M) are nearly equal in revenue — both regions deserve dedicated account management and localized marketing, not a one-size-fits-all global approach
+> - Inglaterra and Île-de-France are the top two states by order volume — concentration in these urban hubs suggests fulfillment center placement in or near these regions would reduce shipping times and costs
+> - Presence across 164 countries with only 23 regions suggests many countries have very low penetration — identifying the top 10–15 underperforming countries with high potential for a focused expansion play
+> - Southeast Asia shows bubble map concentration but lower revenue ranking — a high-volume, low-value market that may need different pricing or product bundling strategies compared to Europe
 
 ![Geographic Analysis](06_PowerBI/Geographic_Analytics.png)
 
@@ -625,10 +656,154 @@ Total Orders = DISTINCTCOUNT(FactOrders[Order_Id])
 
 ---
 
+## ✅ Conclusion
 
+This project delivers a **production-grade, end-to-end supply chain analytics solution** on Microsoft Azure — starting from a raw CSV file and ending with an executive-ready, multi-page Power BI dashboard. Every layer of the modern data stack is represented: cloud storage, data transformation, warehouse modeling, and business intelligence.
 
+The medallion architecture (Bronze → Silver → Gold) ensures data quality at each stage before it reaches the warehouse. The star schema design in Azure Synapse, with a HASH-distributed fact table and Clustered Columnstore Index, mirrors real-world enterprise data warehouse patterns optimized for analytical workloads.
 
+Most importantly, the dashboard surfaces **real, actionable business findings** — not just pretty charts. A 54.82% late delivery rate and worsening year-over-year shipping variance are findings that a real operations team could act on immediately.
 
 ---
 
-> ⭐ If this project helped you, please give it a star!
+## 📊 Project Impact
+
+### Business Insights Delivered
+
+
+|
+ Area 
+|
+ Finding 
+|
+ Business Impact 
+|
+|
+---
+|
+---
+|
+---
+|
+|
+ 🚨 
+**
+Logistics
+**
+|
+**
+54.82% late delivery rate
+**
+ — majority of orders arrive late 
+|
+ High-priority operational risk; Standard Class shipping accounts for 41.45% of all late deliveries 
+|
+|
+ 📈 
+**
+Shipping Variance
+**
+|
+ Variance worsening: 0.564 (2015) → 0.613 (2018) 
+|
+ Scheduling accuracy is deteriorating — requires process review 
+|
+|
+ 💰 
+**
+Revenue
+**
+|
+ Europe leads at 
+**
+$10.9M
+**
+; LATAM leads in order volume at 
+**
+52K orders
+**
+|
+ Two distinct market strategies needed — Europe for revenue, LATAM for scale 
+|
+|
+ 🛒 
+**
+Customer
+**
+|
+ Consumer segment = 
+**
+51.91% of sales
+**
+ ($19.1M); Debit is top payment method (38.54%) 
+|
+ Consumer-focused promotions and debit/card payment optimization offer highest ROI 
+|
+|
+ 🏆 
+**
+Products
+**
+|
+ Fishing category leads revenue at 
+**
+$6.9M
+**
+; Fan Shop leads profit at 
+**
+$1.83M
+**
+|
+ Inventory and margin strategies differ across top-performing categories 
+|
+|
+ 📅 
+**
+Seasonality
+**
+|
+ Revenue peaked in 2015–2016 at 
+**
+$12.3M each year
+**
+; monthly profit peaks in Jan & Aug–Sep 
+|
+ Forecasting and stock planning can target these windows 
+|
+
+### Technical Achievements
+
+- ✅ Designed and deployed a **5-service Azure architecture** within a single resource group
+- ✅ Built a **two-pipeline ADF architecture** separating cleaning (Mapping Data Flow) from modeling (Power Query) — a maintainable, production-ready pattern
+- ✅ Implemented **Medallion Architecture** (Bronze/Silver/Gold) on ADLS Gen2 — industry best practice for data lakes
+- ✅ Created a **Star Schema data warehouse** in Synapse with HASH distribution and Clustered Columnstore Index for analytical performance
+- ✅ Developed **11 advanced DAX measures** including YOY Growth %, Shipping Variance, Profit Margin %, and Product Revenue Rank
+- ✅ Delivered a **5-page Power BI dashboard** covering executive KPIs, customer behavior, product performance, logistics efficiency, and geographic distribution
+- ✅ Covered **164 countries** and **23 regions** in geographic analysis
+
+### Skills Demonstrated
+
+```
+Cloud & Infrastructure    →  Azure Data Factory V2, ADLS Gen2, Azure Synapse Analytics
+Data Engineering          →  Medallion Architecture, Mapping Data Flows, Power Query (M)
+Data Warehousing          →  T-SQL, Star Schema, HASH/ROUND_ROBIN distribution, CCI
+Business Intelligence     →  Power BI Desktop, DAX, Interactive dashboards, KPI design
+Analytics                 →  Supply chain KPIs, logistics analysis, customer segmentation
+```
+
+---
+
+## 🔮 Future Enhancements
+
+- [ ] Schedule ADF pipelines with **tumbling window triggers** for automated daily refresh
+- [ ] Add **Azure Monitor + Data Factory alerts** for pipeline failures
+- [ ] Implement **incremental load** in `pl_bronze_to_silver` using watermark columns
+- [ ] Publish Power BI report to **Power BI Service** with row-level security by market/region
+- [ ] Add a **Date dimension table** to enable full time intelligence (MTD, QTD, YTD) in DAX
+- [ ] Connect **Azure Cost Management** data to track pipeline run costs
+
+
+
+
+
+
