@@ -658,150 +658,49 @@ Total Orders = DISTINCTCOUNT(FactOrders[Order_Id])
 
 ## ✅ Conclusion
 
-This project delivers a **production-grade, end-to-end supply chain analytics solution** on Microsoft Azure — starting from a raw CSV file and ending with an executive-ready, multi-page Power BI dashboard. Every layer of the modern data stack is represented: cloud storage, data transformation, warehouse modeling, and business intelligence.
+This project successfully delivered a **production-grade, end-to-end cloud-based Supply Chain Analytics solution** built on Microsoft Azure — transforming raw operational CSV data into an executive-ready, interactive Power BI dashboard across 5 business-focused report pages.
 
-The medallion architecture (Bronze → Silver → Gold) ensures data quality at each stage before it reaches the warehouse. The star schema design in Azure Synapse, with a HASH-distributed fact table and Clustered Columnstore Index, mirrors real-world enterprise data warehouse patterns optimized for analytical workloads.
+The solution covers every layer of the modern data stack: ingestion into **Azure Data Lake Storage Gen2**, two-stage transformation via **Azure Data Factory** (Mapping Data Flow + Power Query), warehousing in an optimized **Azure Synapse Analytics Dedicated SQL Pool**, and visualization through **Power BI** with advanced DAX measures.
 
-Most importantly, the dashboard surfaces **real, actionable business findings** — not just pretty charts. A 54.82% late delivery rate and worsening year-over-year shipping variance are findings that a real operations team could act on immediately.
+Each dashboard page was intentionally designed for a specific stakeholder group — from C-Suite executives to logistics operations teams — ensuring that insights are not just accurate, but actionable for the right audience.
 
----
-
-## 📊 Project Impact
-
-### Business Insights Delivered
-
-
-|
- Area 
-|
- Finding 
-|
- Business Impact 
-|
-|
----
-|
----
-|
----
-|
-|
- 🚨 
-**
-Logistics
-**
-|
-**
-54.82% late delivery rate
-**
- — majority of orders arrive late 
-|
- High-priority operational risk; Standard Class shipping accounts for 41.45% of all late deliveries 
-|
-|
- 📈 
-**
-Shipping Variance
-**
-|
- Variance worsening: 0.564 (2015) → 0.613 (2018) 
-|
- Scheduling accuracy is deteriorating — requires process review 
-|
-|
- 💰 
-**
-Revenue
-**
-|
- Europe leads at 
-**
-$10.9M
-**
-; LATAM leads in order volume at 
-**
-52K orders
-**
-|
- Two distinct market strategies needed — Europe for revenue, LATAM for scale 
-|
-|
- 🛒 
-**
-Customer
-**
-|
- Consumer segment = 
-**
-51.91% of sales
-**
- ($19.1M); Debit is top payment method (38.54%) 
-|
- Consumer-focused promotions and debit/card payment optimization offer highest ROI 
-|
-|
- 🏆 
-**
-Products
-**
-|
- Fishing category leads revenue at 
-**
-$6.9M
-**
-; Fan Shop leads profit at 
-**
-$1.83M
-**
-|
- Inventory and margin strategies differ across top-performing categories 
-|
-|
- 📅 
-**
-Seasonality
-**
-|
- Revenue peaked in 2015–2016 at 
-**
-$12.3M each year
-**
-; monthly profit peaks in Jan & Aug–Sep 
-|
- Forecasting and stock planning can target these windows 
-|
-
-### Technical Achievements
-
-- ✅ Designed and deployed a **5-service Azure architecture** within a single resource group
-- ✅ Built a **two-pipeline ADF architecture** separating cleaning (Mapping Data Flow) from modeling (Power Query) — a maintainable, production-ready pattern
-- ✅ Implemented **Medallion Architecture** (Bronze/Silver/Gold) on ADLS Gen2 — industry best practice for data lakes
-- ✅ Created a **Star Schema data warehouse** in Synapse with HASH distribution and Clustered Columnstore Index for analytical performance
-- ✅ Developed **11 advanced DAX measures** including YOY Growth %, Shipping Variance, Profit Margin %, and Product Revenue Rank
-- ✅ Delivered a **5-page Power BI dashboard** covering executive KPIs, customer behavior, product performance, logistics efficiency, and geographic distribution
-- ✅ Covered **164 countries** and **23 regions** in geographic analysis
-
-### Skills Demonstrated
-
-```
-Cloud & Infrastructure    →  Azure Data Factory V2, ADLS Gen2, Azure Synapse Analytics
-Data Engineering          →  Medallion Architecture, Mapping Data Flows, Power Query (M)
-Data Warehousing          →  T-SQL, Star Schema, HASH/ROUND_ROBIN distribution, CCI
-Business Intelligence     →  Power BI Desktop, DAX, Interactive dashboards, KPI design
-Analytics                 →  Supply chain KPIs, logistics analysis, customer segmentation
-```
+The most critical finding — a **54.82% late delivery rate that is worsening year-over-year** — is exactly the kind of operational red flag this solution was built to surface. It is not a vanity metric. It is a business problem a real team could act on immediately.
 
 ---
 
-## 🔮 Future Enhancements
+## 🔍 Key Findings
 
-- [ ] Schedule ADF pipelines with **tumbling window triggers** for automated daily refresh
-- [ ] Add **Azure Monitor + Data Factory alerts** for pipeline failures
-- [ ] Implement **incremental load** in `pl_bronze_to_silver` using watermark columns
-- [ ] Publish Power BI report to **Power BI Service** with row-level security by market/region
-- [ ] Add a **Date dimension table** to enable full time intelligence (MTD, QTD, YTD) in DAX
-- [ ] Connect **Azure Cost Management** data to track pipeline run costs
+- 📦 Analyzed **66K total orders** generating **$36.78M in revenue** and **$3.97M in profit** across a 4-year period (2015–2018)
+- 👥 Evaluated **20.7K customers** across Consumer, Corporate, and Home Office segments — Consumer segment alone drives **51.91% of total sales**
+- 🏆 Identified top-performing products and categories — **Fishing ($6.9M)** leads revenue, **Fan Shop ($1.83M)** leads profit
+- 🚨 Detected a critical **54.82% late delivery rate** — more than 1 in 2 customers receive their orders late — with Standard Class shipping carrying the highest risk at **41.45%**
+- 📈 Measured a **+0.57 day average shipping variance** that is worsening every year (0.564 in 2015 → 0.613 in 2018), indicating a systemic logistics problem rather than a one-off issue
+- 🌍 Assessed business performance across **164 countries and 23 regions** — **Western Europe ($5.9M)** leads regional sales while **LATAM (52K orders)** leads order volume
+- 💳 Identified **Debit (38.54%)** as the dominant payment method — critical input for checkout experience optimization
+- 📅 Discovered seasonal profit peaks in **January and August–September** — providing clear windows for promotional and inventory planning
 
+---
+
+## 💼 Business Impact
+
+- 📊 Enabled **data-driven decision-making** through a centralized, multi-page Power BI dashboard accessible to five distinct stakeholder groups
+- 🚚 Surfaced a **54.82% late delivery rate and worsening shipping variance** — giving operations teams the evidence needed to prioritize logistics process improvements and carrier renegotiations
+- 🛒 Delivered **customer segmentation and revenue concentration analysis** — revealing over-reliance on a single customer and the Consumer segment's outsized contribution, supporting smarter CRM and retention strategy
+- 🏬 Identified **Fan Shop as the highest-profit department** despite not leading in revenue — enabling merchandising teams to make better margin-aware inventory and pricing decisions
+- 🌍 Provided **geographic sales distribution insights** across 164 countries — helping regional strategy teams identify high-performing markets and untapped expansion opportunities
+- ⚙️ Built on a **scalable, cloud-native Azure architecture** — the pipeline and warehouse can accommodate growing data volumes and new data sources without redesigning the solution
+
+---
+
+## 🏆 Technical Achievements
+
+- ☁️ Designed and deployed a **5-service Azure architecture** within a single resource group — ADLS Gen2, Azure Data Factory, Azure Synapse Analytics, Dedicated SQL Pool, and Power BI
+- 🏅 Implemented **Medallion Architecture (Bronze → Silver → Gold)** on Azure Data Lake Storage Gen2 — separating raw ingestion, cleaning, and business modeling into distinct, maintainable layers
+- 🔄 Built a **two-pipeline ADF architecture** — `pl_bronze_to_silver` using a Mapping Data Flow for data cleaning, and `pl_silver_to_gold` using a Power Query activity for dimensional modeling — following production-ready design patterns
+- 🏛️ Designed a **Star Schema data warehouse** in Azure Synapse Dedicated SQL Pool with `FactOrders` (HASH distributed + Clustered Columnstore Index) at the centre and 4 ROUND_ROBIN dimension tables — optimized for analytical query performance
+- 📥 Loaded all 5 warehouse tables using **COPY INTO with Managed Identity** — the recommended secure, credential-free bulk ingestion approach for Synapse
+- 📐 Developed **11 advanced DAX measures** in Power BI — including YOY Growth %, Shipping Variance, Profit Margin %, Product Revenue Rank, and Revenue per Customer
+- 📊 Delivered a **5-page interactive Power BI dashboard** — each page designed for a specific stakeholder with targeted KPIs, slicers, maps, and trend visuals covering executive performance, customer analytics, product analytics, logistics efficiency, and geographic distribution
 
 
 
