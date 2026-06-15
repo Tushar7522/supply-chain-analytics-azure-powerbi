@@ -3,7 +3,7 @@
 This folder contains the final Power BI dashboards developed for Supply Chain Analytics.
 
 Dashboard Pages:
-- Executive Summary
+- Business Performance Overview 
 - Customer Analytics
 - Product Analytics
 - Logistics Analytics
